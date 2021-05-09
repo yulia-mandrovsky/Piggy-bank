@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+
+body {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  min-width: 360px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~ Desktop Version ~~~~~~~~~~~~~~~~ */
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
+
+.block-wrapper {
+  width: 50%;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 30px;
+  margin-top: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #f05945;
+  font-size: 50px;
+  text-shadow: 1px 3px 4px lightgrey;
+}
+
+.block {
+  height: 500px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #f7f3e9;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#goal-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  color: #495464;
+}
+
+.header-in-form {
+  background-color: #5eaaa8;
+  text-align: center;
+  box-sizing: border-box;
+  height: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 28px;
+  height: 70px;
+  margin-bottom: 20px;
+  color: #393e46;
+}
+
+h3 {
+  margin: 0;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+label {
+  display: inline;
+  margin-left: 20px;
+  width: 200px;
+}
+
+.form-input {
+  margin-left: 20px;
+  height: 25px;
+  border-radius: 5px;
+  border: lightgrey solid 1px;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.main-input-label {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.main-input {
+  font-size: 28px;
+  font-weight: 700;
+  height: 40px;
+  width: 50%;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.block-for-inputs {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#monthly-payment {
+  background-color: #ffb26b;
+}
+
+.button-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.form-btn {
+  width: 35%;
+  height: 50px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+  background-color: #f05945;
+  color: #40394a;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+
+.form-btn {
+  outline: none;
+}
+
+#form-save-btn {
+  background-color: #a3d2ca;
+  margin-left: 40px;
+}
+
+#form-cancel-btn:hover {
+  background-color: white;
+  color: #393e46;
+  cursor: pointer;
+}
+
+#form-save-btn:hover {
+  background-color: white;
+  color: #5eaaa8;
+  cursor: pointer;
+}
+
+#goal-list-section {
+  text-align: center;
+}
+
+#saved-goals {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* -----------Goal card */
+
+.target-card {
+  border-radius: 5px;
+  width: 95%;
+  min-height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  background-color: #5eaaa8;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* Goal name on card */
+
+.target-card-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  background-color: #5eaaa8;
+  text-align: left;
+  width: 100%;
+}
+
+/* Скрытый блок */
+
+.target-card-hidden-block {
+  background: white;
+  display: none;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.target-card-row-for-buttons {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.cardBtn {
+  margin-top: 20px;
+  width: 40%;
+  height: 35px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cardBtn:focus {
+  outline: none;
+}
+
+.cardBtn:hover {
+  background-color: #f7f3e9;
+}
+
+.changeCardBtn {
+  margin-right: 20px;
+  background-color: #a3d2ca;
+  transition: 0.4s all ease;
+  cursor: pointer;
+}
+
+.changeCardBtn:hover {
+  color: #5eaaa8;
+}
+
+.deleteCardBtn {
+  background-color: #f05945;
+  transition: 0.4s all ease;
+  cursor: pointer;
+
+}
+
+.deleteCardBtn:hover {
+  color: #f05945;
+}
+
+.target-card-title-and-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  background-color: #5eaaa8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 19px;
+}
+
+.arrow-to-down {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.arrow-to-up {
+  display: none;
+  margin-top: 18px;
+  margin-left: 30px;
+}
+
+.arrow-to-down:hover {
+  cursor: pointer;
+}
+
+.arrow-to-up:hover {
+  cursor: pointer;
+}
+
+/* ~~~~~~~~~~~~~~~~~ Mobile version ~~~~~~~~~~~~~~~~~~*/
+
+@media (max-width: 1024px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .block-wrapper {
+    width: 95%;
+    padding: 20px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  h1 {
+    color: #f05945;
+    font-size: 40px;
+    margin: 10px;
+    text-shadow: 1px 3px 4px lightgrey;
+  }
+
+  .block {
+    width: 100%;
+    height: 470px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #f7f3e9;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  #goal-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    color: #495464;
+  }
+
+  .header-in-form {
+    background-color: #5eaaa8;
+    text-align: center;
+    box-sizing: border-box;
+    height: 90px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    height: 70px;
+    margin-bottom: 10px;
+    color: #393e46;
+  }
+
+  .field {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .field-main {
+    justify-content: left;
+  }
+
+  label {
+    display: inline;
+    margin-left: 20px;
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .form-input {
+    height: 20px;
+    width: 50%;
+    border-radius: 5px;
+    border: #40394a solid 1px;
+  }
+
+  .main-input-label {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .main-input {
+    font-size: 20px;
+    font-weight: 700;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: auto;
+    width: 93%;
+  }
+
+  .button-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .form-btn {
+    width: 35%;
+    height: 40px;
+    background-color: #f05945;
+    color: #40394a;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+/* Сообщения об ошибках.   Сообщения , которые появляются при вводе невалидных данных  */
+
+/* Сообщение о неверно введённой дате */
+
+.error-message1 {
+  position: absolute;
+  top: 28px;
+  left: 241px;
+  /* background: red; */
+  color: red;
+
+  visibility: hidden;
+}
+
+/* Сообщение о незаполненных полях (в случае, если хотя бы одно из полей пустое) */
+
+.error-message2 {
+  position: absolute;
+  top: 28px;
+  left: 240px;
+  color: red;
+  visibility: hidden;
+
+}

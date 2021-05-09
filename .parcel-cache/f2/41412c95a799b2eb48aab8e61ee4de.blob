@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piggy Bank</title>
+
+  <link rel="stylesheet" href="563fd50d718577864c67592ae4509f0a">
+
+  
+
+</head>
+<body>
+  <div class="wrapper">
+    
+    <form id="goal-form" class="block-wrapper">
+      <h1 class="header">Save up for a dream</h1>
+      <div class="box-for-form block">
+        <div class="header-in-form">
+          <h3>Add a goal</h3>
+        </div>
+      <div class="block-for-inputs">
+        
+        <div class="field field-main">
+          <label class="form-label main-input-label">
+            Goal name:
+          </label>
+          <input id="goal-name" class="form-input main-input" type="text" name="goal-name">
+        </div>
+
+      <div class="field">
+      <label class="form-label">
+        Required amount:</label>
+        <input id="sum-required" class="form-input" type="number" name="sum-required">
+      
+    </div>
+
+      <div class="field">
+        <label class="form-label">Term:</label>
+          <input id="period" class="form-input" type="text" placeholder="ММ-ГГГГ" name="period">
+        <small id="error-message1" class="error-message1">Please enter the correct day</small>
+      </div>
+
+      <div class="field">
+      <label class="form-label">
+        :</label>
+        <input id="initial-sum" class="form-input" type="number" name="initial-sum">
+      
+    </div>
+
+      <div class="field">
+      <label class="form-label">
+        Процент по вкладу, %:</label>
+        <input id="percent" class="form-input" type="number" name="percent">
+      
+    </div>
+
+      <div class="field">
+        <label class="form-label">Ежемесячный платёж:</label>
+          <input id="monthly-payment" class="form-input" type="number" name="monthly-payment">
+          <small id="error-message2" class="error-message2">Пожалуйста, заполните все поля</small>
+      </div>
+    </div>
+      <div class="button-block">
+      <button id="form-cancel-btn" class="form-btn" type="button">Отмена</button>
+      
+      <button id="form-save-btn" class="form-btn" type="button">Сохранить</button>
+    </div>
+    </div>
+    </form>
+    
+    <div id="goal-list-section" class="block-wrapper">
+      <h1 id="list-name">Список целей</h1>
+      <div id="saved-goals" class="block">
+        
+      </div>
+    </div>
+
+      
+  </div>
+  <script src="4446f5e227c2c938d062e7ce10c1adbe"></script>
+</body>
+</html>
